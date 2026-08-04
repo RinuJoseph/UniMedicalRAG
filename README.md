@@ -4,7 +4,7 @@
 
 Config Files
 `configs/rarebench.yaml`  rare-disease diagnosis 
-`configs/medical.yaml` passage retrieval and QA 
+`configs/medical.yaml` medical QA 
 
 Three stages, same commands for either dataset:
 
