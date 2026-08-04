@@ -42,8 +42,7 @@ Download and place them as shown below.
 | HPO annotations, `phenotype.hpoa` | https://github.com/obophenotype/human-phenotype-ontology/ |
 | GraphRAG-Bench medical corpus and questions | https://huggingface.co/datasets/GraphRAG-Bench/GraphRAG-Bench |
 
-Information content is computed from the annotation file, so keep the ontology and the
-annotations from the same HPO release.
+
 
 ### Folder structure
 
