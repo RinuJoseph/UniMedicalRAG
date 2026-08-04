@@ -1,0 +1,30 @@
+# Passage retrieval and QA over a passage-entity-sentence graph.
+task: text_qa
+name: medical
+
+# inputs
+dataset_dir: data/medical                    
+embedding_model: data/models/all-mpnet-base-v2
+spacy_model: en_core_sci_scibert
+device: cuda
+
+index_dir: index/medical
+sentence_map: index/medical/sentence_to_passage.json
+results_dir: results/medical
+
+
+w_entity: 0.4
+w_sentence: 0.3
+w_passage: 0.3
+top_sentence: 20       
+
+# retrieval
+damping: 0.5
+solver: igraph
+power_iters: 30
+top_k: 20
+
+# llm stages
+qa_model: gpt-4o-mini
+grade_model: gpt-4o-mini
+context_passages: 5    

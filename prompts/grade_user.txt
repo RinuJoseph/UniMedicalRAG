@@ -1,0 +1,11 @@
+Please evaluate if the generated answer is correct by comparing it with the gold answer.
+        Generated answer: {prediction}
+        Gold answer: {gold}
+
+        The generated answer should be considered correct if it:
+        1. Contains the key information from the gold answer
+        2. Is factually accurate and consistent with the gold answer
+        3. Does not contain any contradicting information
+
+        Respond with ONLY 'correct' or 'incorrect'.
+        Response:

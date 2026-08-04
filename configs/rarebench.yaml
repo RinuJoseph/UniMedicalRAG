@@ -1,0 +1,25 @@
+# Rare-disease diagnosis over a disease-phenotype knowledge graph.
+task: kg_diagnosis
+name: rarebench
+
+# inputs
+nodes_dir: data/rarebench/rb_source         
+hpoa: data/rarebench/hpo/phenotype.hpoa
+obo: data/rarebench/hpo/hp.obo
+cases_dir: data/rarebench/cases
+disease_names: data/rarebench/mapping/disease_mapping.json
+splits: [RAMEDIS, LIRICAL, MME, HMS, PUMCH_ADM]
+
+
+index_dir: index/rarebench
+results_dir: results/rarebench
+
+# retrieval
+damping: 0.15         
+prune_k: 20            
+top_k: 20              
+
+# llm stages
+rerank_model: gpt-4o
+judge_model: gpt-4o
+judge_topn: 10         
