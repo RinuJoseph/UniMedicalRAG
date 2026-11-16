@@ -115,6 +115,6 @@ RareBench is scored with the LLM judge and reports Hit@k and Median Rank. The me
 config answers each question from the retrieved passages and grades the answer, reporting
 accuracy.
 
-##Implementation Details
+## 6. Implementation Details
 
 We embed text with all-mpnet-base-v2 \cite{xiao2023c}. The damping factor $d$ for the PPR  is set to $d = 0.5$ for question answering and $d = 0.15$ for diagnosis. LLM response generation receives the top-5 passages for question answering and the top-20 candidates for reranking, using GPT-4o-mini \cite{openai_gpt4o_mini_2024} and GPT-4o \cite{hurst2024gpt} respectively at temperature 0. We use GPT-4o-mini for question answering and GPT-4o for disease diagnosis to match the experimental design of the baselines we compare against. All experiments use a single NVIDIA A100-SXM4 (40\,GB) GPU.
